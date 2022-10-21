@@ -1,5 +1,6 @@
 import random
 
+
 def atualiza_vizinhanca(campo, l, c, dim):
     if c + 1 < dim and campo[l][c + 1] != 9:
         campo[l][c+1] = campo[l][c+1] + 1
@@ -33,7 +34,7 @@ BOMBA = 9
 for i in range(dim):
     campo.append([0] * dim)
 
-contador = 0    
+contador = 0
 while contador < dim:
     i = random.randint(0, dim - 1)
     j = random.randint(0, dim - 1)
